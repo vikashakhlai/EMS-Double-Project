@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='./assets/styles/style.css' rel='stylesheet'>
+	<title>Main page</title>
+</head>
+
+<body>
+	<div class='container'>
+		<div class='shadow'></div>
+		<section class='main-info'>
+			<h1 class='main-info-header'>Демо версия</h1>
+			<p class='main-info-paragraph'>За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500
+				средних и малых проектов.
+				Используя знания и накопленный опыт мы можем предложить </p>
+			<button class='main-info-button'>
+				<span>Попробовать бесплатно</span>
+				<svg class='icon' viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="36" height="36" rx="18" fill="white" />
+					<path d="M13 13H23V23" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M13 23L23 13" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</button>
+		</section>
+		<section class='main-image'>
+			<img class='image' src='../public/images/mainImage1440.png' alt='main-image'>
+		</section>
+	</div>
+	<form class='main-form'>
+		<div class='close-button-block'>
+			<button class='close-button'>
+				<svg class='cross' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</button>
+		</div>
+		<h3 class='main-form-header'>Войти в систему</h3>
+		<div class='input-block'>
+			<input class='main-form-input' type='text' placeholder='Email/Телефон' required>
+			<input class='main-form-input' type='password' placeholder='Пароль' required>
+		</div>
+		<div class='save-password-block'>
+			<input type='checkbox' class='save-password-checkbox' id='save-password' name='save-password'>
+			<label class='save-password-text' for='save-password'>Запомнить пароль</label>
+		</div>
+		<a class='recover'>Восстановить</a>
+		<div class='button-block'>
+			<button class='sign-in main-form-button' type='submit'>Войти</button>
+			<button class='sign-up main-form-button'>Зарегистрироваться</button>
+		</div>
+	</form>
+	<script src='./assets/scripts/script.js'></script>
+
+</body>
+
+</html>
