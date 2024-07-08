@@ -333,12 +333,12 @@ input {
 }
 @media (min-width: 1920px) {
   .container .main-image .image {
-    content: url("../../../public/images/mainImage1920.png");
+    content: url("../../public/images/mainImage1920.png");
   }
 }
 @media (min-width: 1660px) and (max-width: 1920px) {
   .container .main-image .image {
-    content: url("../../../public/images/mainImage1920.png");
+    content: url("../../public/images/mainImage1920.png");
   }
 }
 @media (min-width: 768px) and (max-width: 1440px) {
@@ -348,7 +348,7 @@ input {
 }
 @media (min-width: 376px) and (max-width: 768px) {
   .container .main-image .image {
-    content: url("../../../public/images/mainImage768.png");
+    content: url("../../public/images/mainImage768.png");
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
   }
