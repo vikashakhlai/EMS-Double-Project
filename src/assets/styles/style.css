@@ -133,17 +133,106 @@ input {
   z-index: 2;
   display: none;
 }
+@media (min-width: 1920px) {
+  .container {
+    max-width: 100vw;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .container {
+    max-width: calc(1360px + 480 * (100vw - 1440px) / 480);
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    max-width: calc(720px + 640 * (100vw - 768px) / 672);
+    margin: calc(24px + 12 * (100vw - 768px) / 672) calc(24px + 16 * (100vw - 768px) / 672);
+  }
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 24px;
+    max-width: 720px;
+    margin: calc(14px + 10 * (100vw - 375px) / 393) 24px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    margin: 14px 24px;
+    max-width: calc(296px + 31 * (100vw - 320px) / 55);
+  }
+}
 .container .main-info {
   margin-left: 72px;
   margin-right: 70px;
 }
-.container .main-info-header {
+@media (min-width: 1920px) {
+  .container .main-info {
+    max-width: calc(538px + 1vw);
+    margin-right: calc(-1024px + 70vw);
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .container .main-info {
+    max-width: 538px;
+    margin-left: 72px;
+    margin-right: calc(70px + 250 * (100vw - 1440px) / 480);
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container .main-info {
+    margin-left: calc(24px + 48 * (100vw - 768px) / 672);
+    margin-right: calc(24px + 48 * (100vw - 768px) / 672);
+    max-width: calc(360px + 178 * (100vw - 768px) / 672);
+  }
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .container .main-info {
+    padding: 24px 0;
+    max-width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .container .main-info {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding: calc(14px + 6 * (100vw - 320px) / 55);
+  }
+}
+.container .main-info .main-info-header {
   color: #1f4284;
   font-weight: 500;
   font-size: 26px;
   margin-bottom: 18px;
 }
-.container .main-info-paragraph {
+@media (min-width: 1920px) {
+  .container .main-info .main-info-header {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .container .main-info .main-info-header {
+    font-size: calc(26px + 4 * (100vw - 1440px) / 480);
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .container .main-info .main-info-header {
+    font-size: 20px;
+    font-size: calc(17px + 3 * (100vw - 375px) / 393);
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .container .main-info .main-info-header {
+    font-size: calc(15px + 2 * (100vw - 320px) / 55);
+    margin-bottom: calc(14px + 4 * (100vw - 320px) / 55);
+  }
+}
+.container .main-info .main-info-paragraph {
   color: #727272;
   font-weight: 400;
   font-size: 17px;
@@ -151,7 +240,26 @@ input {
   padding-right: 27px;
   margin-bottom: 36px;
 }
-.container .main-info-button {
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container .main-info .main-info-paragraph {
+    font-size: calc(15px + 2 * (100vw - 768px) / 672);
+  }
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .container .main-info .main-info-paragraph {
+    font-size: calc(13px + 2 * (100vw - 375px) / 393);
+    padding-right: 0px;
+    margin-bottom: calc(18px + 6 * (100vw - 375px) / 393);
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .container .main-info .main-info-paragraph {
+    font-size: calc(11px + 2 * (100vw - 320px) / 55);
+    padding-right: 0;
+    margin-bottom: 18px;
+  }
+}
+.container .main-info .main-info-button {
   background-color: #244c98;
   border: none;
   border-radius: 60px;
@@ -167,17 +275,51 @@ input {
   gap: 57px;
   line-height: 160%;
 }
-.container .main-info-button:hover {
+@media (min-width: 375px) and (max-width: 768px) {
+  .container .main-info .main-info-button {
+    width: 261px;
+    height: 56px;
+    padding-left: 18px;
+    font-size: 15px;
+    gap: 27px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .container .main-info .main-info-button {
+    width: 279px;
+    height: 56px;
+    padding-left: 18px;
+    font-size: 15px;
+    gap: 45px;
+    width: calc(220px + 59 * (100vw - 320px) / 55);
+    gap: calc(32px + 13 * (100vw - 320px) / 55);
+    padding-left: calc(10px + 8 * (100vw - 320px) / 55);
+    font-size: calc(12px + 3 * (100vw - 320px) / 55);
+  }
+}
+.container .main-info .main-info-button:hover {
   background-color: #183262;
   transition: all 0.4s ease-in-out;
 }
-.container .main-info-button:hover .icon path {
+.container .main-info .main-info-button:hover .icon path {
   stroke: #183262;
   transition: all 0.4s ease-in-out;
 }
-.container .main-info-button .icon {
+.container .main-info .main-info-button .icon {
   width: 44px;
   height: 44px;
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .container .main-info .main-info-button .icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .container .main-info .main-info-button .icon {
+    width: calc(30px + 6 * (100vw - 320px) / 55);
+    height: calc(30px + 6 * (100vw - 320px) / 55);
+  }
 }
 .container .main-image {
   height: 456px;
@@ -188,6 +330,28 @@ input {
   height: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+@media (min-width: 1920px) {
+  .container .main-image .image {
+    content: url("../../../public/images/mainImage1920.png");
+  }
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  .container .main-image .image {
+    content: url("../../../public/images/mainImage1920.png");
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container .main-image .image {
+    /* object-fit: cover; */
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .container .main-image .image {
+    content: url("../../../public/images/mainImage768.png");
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .main-form {
@@ -209,6 +373,13 @@ input {
   z-index: 3;
   display: none;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form {
+    width: calc(280px + 220 * (100vw - 320px) / 448);
+    height: calc(360px + 215 * (100vw - 320px) / 448);
+    padding: calc(12px + 12 * (100vw - 320px) / 448);
+  }
+}
 .main-form .close-button-block {
   display: flex;
   justify-content: flex-end;
@@ -223,6 +394,12 @@ input {
   justify-content: flex-end;
   margin-bottom: 4px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .close-button {
+    width: calc(26px + 26 * (100vw - 320px) / 448);
+    height: calc(26px + 26 * (100vw - 320px) / 448);
+  }
+}
 .main-form .close-button:hover .cross path {
   stroke: #2a55a4;
   transition: all 0.4s ease-in-out;
@@ -231,10 +408,21 @@ input {
   width: 24px;
   height: 24px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .close-button .cross {
+    width: calc(12px + 12 * (100vw - 320px) / 448);
+    height: calc(12px + 12 * (100vw - 320px) / 448);
+  }
+}
 .main-form .main-form-header {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 18px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .main-form-header {
+    font-size: calc(18px + 6 * (100vw - 320px) / 448);
+  }
 }
 .main-form .input-block {
   display: flex;
@@ -242,14 +430,29 @@ input {
   gap: 4px;
   margin-bottom: 24px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .input-block {
+    margin-bottom: calc(12px + 12 * (100vw - 320px) / 448);
+  }
+}
 .main-form .save-password-block {
   margin-bottom: 24px;
   display: flex;
   gap: 14px;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .save-password-block {
+    margin-bottom: calc(12px + 12 * (100vw - 320px) / 448);
+  }
+}
 .main-form .save-password-text {
   font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .save-password-text {
+    font-size: calc(12px + 6 * (100vw - 320px) / 448);
+  }
 }
 .main-form .save-password-checkbox {
   position: absolute;
@@ -293,6 +496,12 @@ input {
   font-weight: 500;
   padding: 24px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .main-form-input {
+    padding: calc(12px + 12 * (100vw - 320px) / 448);
+    font-size: calc(12px + 6 * (100vw - 320px) / 448);
+  }
+}
 .main-form .main-form-input:hover {
   box-shadow: 0 0 6px #1f4284;
   transition: all 0.4s ease-in-out;
@@ -303,6 +512,12 @@ input {
   color: #244c98;
   margin-bottom: 36px;
   font-weight: 500;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .recover {
+    font-size: calc(14px + 6 * (100vw - 320px) / 448);
+    margin-bottom: calc(18px + 18 * (100vw - 320px) / 448);
+  }
 }
 .main-form .recover:hover {
   cursor: pointer;
@@ -321,6 +536,12 @@ input {
   font-size: 18px;
   font-weight: 500;
   font-family: "Manrope", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-form .main-form-button {
+    height: calc(40px + 25 * (100vw - 320px) / 448);
+    font-size: calc(12px + 6 * (100vw - 320px) / 448);
+  }
 }
 .main-form .sign-up {
   color: #244c98;
